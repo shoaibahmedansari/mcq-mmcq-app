@@ -1,0 +1,67 @@
+.btn{
+    position: relative;
+    top:10px;
+    cursor: pointer;
+}
+.radio{
+    cursor: pointer; 
+}
+.feedback{
+    position: absolute;
+    width: 180px;
+    height: 20px;
+    top: 55px;
+    left: 140px;
+    border-radius: 20px;
+    background-color: #303030;
+    color: #fff;
+    padding: 25px 5px;
+    text-align: center;
+}
+.close{
+    position: absolute;
+    right: 10px;
+    border-radius: 5px; 
+    transform: scale(1); 
+    cursor: pointer;
+}
+.close:hover{
+    transform: scale(1.1);
+}
+.radiobtn{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    top: 14px;
+    left: 0px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    cursor: pointer;
+    display: inline-block;
+}
+.multipalSel{
+    border-radius: 0%;
+}
+.active{
+    pointer-events: auto;
+}
+.disabled{
+    pointer-events: none;
+}
+.radiobtnSelectedmul{
+    background-color: #069c49;
+    border-radius: 0%;
+}
+label{
+    margin-left: 5px;
+}
+.radiobtnSelected{
+    background-color: #069c49;
+    /* cursor: default; */
+}
+.dropDown{
+    position: absolute;
+    left: 240px;
+    top: 15px;
+}

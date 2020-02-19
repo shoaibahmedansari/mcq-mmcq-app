@@ -1,0 +1,21 @@
+<p>{{questionData}}</p>
+<!-- <p>{{optionData}}</p> -->
+<div *ngFor="let option of optionData; let i = index" >
+  <!-- <input class="radio" type="radio" value={{i}} name="option" (change)="onItemChange(i)"/> -->
+  <div id="radiobtn_{{i}}" class="radiobtn" (click)="onItemChange1(i, $event)" [ngClass]="status ? 'disabled' : 'active'"></div>
+  <!-- <div id="radiobtn_{{i}}" class="radiobtn" (click)="onItemChange1(i, $event)" [ngClass]="{'radiobtnClicked': item.clicked == option}"></div> -->
+  <!-- <div class="radiobtn" [ngClass]="{'active': selectedItem == item}" (click)="radiobtnClicked(item, $event)" *ngFor="let item of optionData"></div> -->
+  <label>{{option}}</label>
+</div>
+<button class="btn btn-primary" (click)="onSubmit();" disabled={{buttonDisabled}}>Submit</button>
+<div *ngIf="div1" class="feedback">
+        <label *ngIf="div2">{{correctTxt}}</label>
+        <label *ngIf="div3">{{incorrectTxt}}</label>
+    <button class="btn btn-primary close" (click)="close();">x</button>
+</div>
+
+<select class="dropDown" (change)="onDropdownChange($event)" [ngClass]="disable ? 'disabled' : 'active'">
+  <!-- <option value="">Select Option</option> -->
+  <option value="Single Select">Single Select</option>
+  <option value="Multipal Select">Multipal Select</option>
+</select>

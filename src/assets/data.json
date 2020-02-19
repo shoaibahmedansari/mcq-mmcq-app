@@ -1,0 +1,13 @@
+{
+  "options": [
+    "Windows 10",
+    "Windows XP",
+    "Windows Vista",
+    "Mac OS x"
+  ],
+  "question": "What is the OS on your Machine?",
+  "correctAns": 0,
+  "correctAns1": [1, 3],
+  "correctFeedback": "Well Done!",
+  "incorrectFeedback": "Please try again!"
+}
